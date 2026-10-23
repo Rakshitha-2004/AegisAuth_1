@@ -1,0 +1,57 @@
+# ========================================================
+# AegisAuth — Git Ignore Rules (Security Protection)
+# ========================================================
+
+# 1. Environment Variables & Secret Keys (NEVER PUSH TO GITHUB)
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# 2. Python Virtual Environments & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 3. Node.js Dependencies & Production Builds
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+frontend/dist/
+frontend/dist-ssr/
+.vite/
+
+# 4. OS & IDE Metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 5. Application Runtime Logs
+*.log
+logs/
